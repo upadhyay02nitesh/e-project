@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Pandit Service</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(to right, #f9a825, #fb8c00);
+            padding: 40px 0;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        /* Main Content */
+        .main-content {
+            background-color: #fff;
+            padding: 60px 0;
+        }
+
+        .main-content .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .main-content h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #fb8c00;
+        }
+
+        .main-content p {
+            font-size: 1.1em;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta h3 {
+            font-size: 2em;
+            color: #f9a825;
+        }
+
+        .cta p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #f9a825;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #fb8c00;
+        }
+
+        /* Contact Form */
+        .contact {
+            background-color: #fff;
+            padding: 60px 0;
+        }
+
+        .contact h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #fb8c00;
+            margin-bottom: 30px;
+        }
+
+        .contact form {
+            width: 50%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact label {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .contact input,
+        .contact select {
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 1em;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            background-color: #f9a825;
+            color: white;
+            padding: 15px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact button:hover {
+            background-color: #fb8c00;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Online Pandit Service</h1>
+            <p>Book a pandit for any religious ceremony or puja from the comfort of your home.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+            <div class="intro">
+                <h2>Connect with Experienced Pandits Online</h2>
+                <p>Our qualified pandits are available for all types of ceremonies, pujas, and religious rituals. Get expert guidance and blessings without leaving your home.</p>
+            </div>
+
+            <div class="cta">
+                <h3>Book Your Pandit Now</h3>
+                <p>Simply fill out the form below to request your pandit for any occasion.</p>
+                <a href="#contact" class="cta-button">Request a Pandit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="service">Service Type</label>
+                <select id="service" name="service">
+                    <option value="puja">Puja</option>
+                    <option value="havan">Havan</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="anniversary">Anniversary</option>
+                </select>
+
+                <button type="submit" class="submit-button">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Online Pandit Service. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

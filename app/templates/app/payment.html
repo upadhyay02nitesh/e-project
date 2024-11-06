@@ -1,0 +1,7 @@
+<!-- paypal_payment.html -->
+<h1>Pay with PayPal</h1>
+
+<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+    {{ form.as_p }}  <!-- This renders the PayPal button -->
+    <input type="submit" value="Pay Now">
+</form>
